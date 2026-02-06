@@ -8,7 +8,7 @@
         body { 
             background-color: #0d0005; 
             color: #e0e0e0; 
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -17,27 +17,32 @@
             margin: 0;
             text-align: center;
         }
-        h1 { color: #8a0a29; letter-spacing: 3px; font-weight: 900; margin-bottom: 5px; }
-        .support-text { color: #888; margin-bottom: 30px; font-size: 0.9rem; }
+        h1 { color: #8a0a29; letter-spacing: 4px; font-weight: 900; margin-bottom: 10px; text-transform: uppercase; }
+        .tagline { color: #666; font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 40px; text-transform: uppercase; }
+        .content { max-width: 400px; padding: 20px; }
         .email-link { 
-            color: #e0e0e0; 
+            color: #8a0a29; 
             text-decoration: none; 
-            border-bottom: 1px solid #8a0a29;
-            padding-bottom: 2px;
             font-weight: bold;
+            font-size: 1.1rem;
+            border-bottom: 1px solid transparent;
+            transition: border 0.3s;
         }
-        .footer { margin-top: 50px; font-size: 0.7rem; color: #333; }
+        .email-link:hover { border-bottom: 1px solid #8a0a29; }
+        .footer { margin-top: 60px; font-size: 0.7rem; color: #333; }
     </style>
 </head>
 <body>
-    <h1>X-LIST</h1>
-    <p class="support-text">Official Support Page</p>
-    
-    <p>For any inquiries or technical support, please contact:</p>
-    <a href="mailto:seninmail@gmail.com" class="email-link">seninmail@gmail.com</a>
+    <div class="content">
+        <h1>X-LIST</h1>
+        <div class="tagline">Official Support Portal</div>
+        
+        <p>For technical support, feature requests, or general inquiries, please contact us at:</p>
+        <a href="mailto:yourname@example.com" class="email-link">irismolvaa@gmail.com</a>
+    </div>
 
     <div class="footer">
-        © 2026 X-LIST Audit System
+        <p>© 2026 X-LIST Audit System | <a href="#" style="color: #444; text-decoration: none;">Privacy Policy</a></p>
     </div>
 </body>
 </html>
